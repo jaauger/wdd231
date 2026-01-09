@@ -29,8 +29,6 @@ body {
   transform-origin: center;
 }
 
-/* ---------- Subtle Hover Animation ---------- */
-
 .site:hover .logo-ring {
   stroke-dashoffset: 290;
   transform: rotate(90deg);
@@ -55,7 +53,6 @@ body {
     padding-left: 1.5rem;
 }  
 
-/* ---------- Navigation ---------- */
 .home-header {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -88,7 +85,6 @@ nav a.active {
   border-bottom: 2px solid #2c7be5;
   font-weight: 600;
 }
-/* ---------- Grid Layout ---------- */
 
 .section-grid {
     display: grid;
@@ -100,8 +96,6 @@ nav a.active {
 .section-grid > section:nth-of-type(3) {
     grid-column: 1 / -1;
 }
-
-/* ---------- Shared Card Styling ---------- */
 
 .about-me,
 .student-photo,
@@ -120,7 +114,6 @@ nav a.active {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* ---------- Section Headers ---------- */
 
 h2 {
     margin: 0;
@@ -131,8 +124,6 @@ h2 {
     font-size: 1.1rem;
 }
 
-/* ---------- About Me ---------- */
-
 .about-me {
     display: flex;
     flex-direction: column;
@@ -142,8 +133,6 @@ h2 {
     padding: 1rem;
     line-height: 1.6;
 }
-
-/* ---------- Student Photo ---------- */
 
 .student-photo {
     display: flex;
@@ -158,13 +147,10 @@ h2 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ---------- Web Certificate Section ---------- */
 
 .web-cert {
     padding-bottom: 1rem;
 }
-
-/* ---------- Course Filter Buttons ---------- */
 
 .course-tags {
     display: grid;
@@ -190,8 +176,6 @@ h2 {
     transform: translateY(-1px);
 }
 
-/* ---------- Course Cards ---------- */
-
 .course-card {
     background-color: #f9fafb;
     margin: 0 1rem 0.75rem;
@@ -212,10 +196,6 @@ h2 {
     line-height: 1.4;
 }
 
-
-
-/* ---------- Credit Summary ---------- */
-
 .credit-summary {
   margin: 0.75rem 1rem;
   font-size: 0.9rem;
@@ -223,7 +203,7 @@ h2 {
   color: #333;
 }
 
-/* ---------- Completed Courses ---------- */
+
 
 .course-card.completed {
   background-color: #e6f4ea;
@@ -252,17 +232,15 @@ h2 {
 
 .socials {
   display: flex;
-  justify-content: center;   /* center the group horizontally */
+  justify-content: center;   
 }
 
 .socials .middle {
   display: flex;
-  gap: 5rem;               /* controls spacing between icons */
+  gap: 5rem;              
   align-items: center;
 }
-/* ---------- Responsive ---------- */
 
-/* ---------- Mobile Navigation ---------- */
 .menu-toggle {
   display: none;
   background: none;
@@ -272,7 +250,7 @@ h2 {
   color: #1a73e8;
 }
 
-/* Mobile breakpoint */
+
 @media (max-width: 768px) {
 
   header {
