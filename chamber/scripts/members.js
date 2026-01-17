@@ -10,9 +10,8 @@ const membershipMap = {
 };
 
 async function getBusinessData() {
-  const response = await fetch(url); // request
-  const data = await response.json(); // parse the JSON data
-  console.table(data.businesses); // temp output test of data response
+  const response = await fetch(url);
+  const data = await response.json();   
   displaybusinesss(data.businesses); 
 }
 

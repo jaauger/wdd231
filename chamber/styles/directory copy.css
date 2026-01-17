@@ -125,12 +125,7 @@
 .card h2 {
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
 }
-
 
 .card a {
   display: block;
@@ -227,6 +222,11 @@
   text-overflow: ellipsis;
 }
 
+.card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 /* Base badge */
 .badge {
@@ -250,9 +250,16 @@
 }
 
 .badge.gold {
-  background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+  background-color: #ffeb3b;
+  color: #5d4037;
 }
 
+.card h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
 
 /* Ensure the h2 itself is centered in the card */
 .card {
@@ -267,3 +274,6 @@
   justify-content: flex-start;
 }
 
+.badge.gold {
+  background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+}

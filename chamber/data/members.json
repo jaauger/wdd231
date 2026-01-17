@@ -7,7 +7,7 @@
       "phone": "(385) 787-5057",
       "address": "4578 W Partridge Hill Lane, #C-110 Riverton, Utah 84096",
       "member": 2,
-      "imageurl": "images/chip-cookies.png"
+      "imageurl": "images/chip-cookies.webp"
     },
     {
       "name": "Ace Insurance",
@@ -16,7 +16,7 @@
       "phone": "(801) 938-2828",
       "address": "1784 W 12600 S Riverton, Utah 84065",
       "member": 1,
-      "imageurl": "images/ace-insurance.png"
+      "imageurl": "images/ace-insurance.webp"
     },
     {
       "name": "Broomhead Funeral Home",
@@ -25,7 +25,7 @@
       "phone": "(385) 275-4823",
       "address": "12590 S 2200 W Riverton, UT 84065",
       "member": 3,
-      "imageurl": "images/broomhead.png"
+      "imageurl": "images/broomhead.webp"
     },
     {
       "name": "Advance Displays",
@@ -34,7 +34,7 @@
       "phone": "(801) 262-3414",
       "address": "12722 S 4000 W #700-1300 Riverton, Utah 84065",
       "member": 3,
-      "imageurl": "images/advanced-displays.png"
+      "imageurl": "images/advanced-displays.webp"
     },
     {
       "name": "Big O Tires",
@@ -43,7 +43,7 @@
       "phone": "(385) 434-0791",
       "address": "2158 W 12600 S Riverton, Utah 84065",
       "member": 2,
-      "imageurl": "images/big-o-tires.png"
+      "imageurl": "images/big-o-tires.webp"
     },
     {
       "name": "Beautiful Wedding Announcements",
@@ -52,7 +52,7 @@
       "phone": "(801) 254-2778",
       "address": "2120 W 12600th S Ste C Riverton, UT 84065",
       "member": 1,
-      "imageurl": "images/beautiful-wedding-announcements.png"
+      "imageurl": "images/beautiful-wedding-announcements.webp"
     },
     {
       "name": "Akin Aesthetics & Wellness",
@@ -61,7 +61,7 @@
       "phone": "(801) 938-9320",
       "address": "2778 W 12600 S #103 Riverton, Utah 84065",
       "member": 1,
-      "imageurl": "images/akin-aesthetics.png"
+      "imageurl": "images/akin-aesthetics.webp"
     },
     {
       "name": "ABC Great Beginnings",
@@ -70,7 +70,7 @@
       "phone": "(801) 316-1071",
       "address": "12523 S 4150 W Riverton, Utah 84065",
       "member": 2,
-      "imageurl": "images/abc-great-beginnings.png"
+      "imageurl": "images/abc-great-beginnings.webp"
     },
     {
       "name": "Ascend Staffing",
@@ -79,7 +79,7 @@
       "phone": "(801) 561-9191",
       "address": "4534 W Partridge Hill Ln Riverton, UT",
       "member": 1,
-      "imageurl": "images/ascend-staffing.png"
+      "imageurl": "images/ascend-staffing.webp"
     },
     {
       "name": "Arbor Day Nursery",
@@ -88,7 +88,7 @@
       "phone": "(801) 446-8457",
       "address": "2767 W 12600 S Riverton, Utah 84065",
       "member": 2,
-      "imageurl": "images/arbor-day-nursery.png"
+      "imageurl": "images/arbor-day-nursery.webp"
     }, 
     {
       "name": "American Dance Academy",
@@ -97,7 +97,7 @@
       "phone": "(801) 828-8402",
       "address": "12447 S Crossing Drive, #10 Riverton, Utah 84096",
       "member": 1,
-      "imageurl": "images/ada.png"
+      "imageurl": "images/ada.webp"
     },
     {
       "name": "Clarity Vision",
@@ -106,7 +106,7 @@
       "phone": "(801) 208-0734",
       "address": "1543 W 12600 S, #104 Riverton, Utah 84065",
       "member": 3,
-      "imageurl": "images/clarity-vision.png"
+      "imageurl": "images/clarity-vision.webp"
     },
     {
       "name": "Crumbl Cookies",
@@ -115,7 +115,7 @@
       "phone": "(801) 747-9970",
       "address": "2778 W 12600 S, #102 Riverton, Utah 84065",
       "member": 3,
-      "imageurl": "images/crumbl-cookies.png"
+      "imageurl": "images/crumbl-cookies.webp"
     }
   ]
 }

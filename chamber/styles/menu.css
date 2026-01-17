@@ -1,6 +1,3 @@
-/* =========================
-   BASE NAV STYLES
-========================= */
 
 nav {
   background-color: #fefbf5;
@@ -42,7 +39,7 @@ nav ul.navigation li a {
 nav ul.navigation li a:hover,
 nav ul.navigation li a:focus-visible {
   background-color: #f1f3f4;
-  color: #1a73e8;
+  color: #1558b0;
   border-radius: 999px;
   outline: none;
 }
@@ -58,7 +55,7 @@ nav ul.navigation li a::after {
   right: 1rem;
   bottom: 0.25rem;
   height: 3px;
-  background-color: #1a73e8;
+  background-color: #1558b0;;
   border-radius: 2px;
   transform: scaleX(0);
   transform-origin: center;
@@ -76,7 +73,7 @@ nav ul.navigation li a:focus-visible::after {
 
 nav ul.navigation li a[aria-current="page"] {
   font-weight: 700;
-  color: #1a73e8;
+  color: #1558b0;;
 }
 
 nav ul.navigation li a[aria-current="page"]::after {
@@ -153,17 +150,17 @@ nav ul.navigation li a[aria-current="page"]::after {
     border-radius: 0;
   }
 
-  /* Disable underline animation on mobile */
+  
   nav ul.navigation li a::after {
     display: none;
   }
 
-  /* Mobile tap feedback */
+  
   nav ul.navigation li a:active {
     background-color: #dde7ff;
   }
 
-  /* Mobile current-page indicator */
+  
   nav ul.navigation li a[aria-current="page"] {
     background-color: #e8f0fe;
     border-left: 5px solid #1a73e8;
