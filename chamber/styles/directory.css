@@ -1,0 +1,275 @@
+
+.view-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.view-btn {
+  border: 2px solid #1a73e8;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+
+.view-btn.active {
+  background-color: #e8f0fe;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  gap: 3px;
+}
+
+
+.icon.grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.icon.grid::before,
+.icon.grid::after,
+.icon.grid span,
+.icon.grid div {
+  content: "";
+}
+
+.icon.grid {
+  position: relative;
+}
+
+.icon.grid::before,
+.icon.grid::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #1a73e8;
+}
+
+.icon.grid::before {
+  top: 0;
+  left: 0;
+}
+
+.icon.grid::after {
+  top: 0;
+  right: 0;
+}
+
+.icon.grid span,
+.icon.grid div {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #1a73e8;
+}
+
+.icon.grid span {
+  bottom: 0;
+  left: 0;
+}
+
+.icon.grid div {
+  bottom: 0;
+  right: 0;
+}
+
+.icon.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon.list::before,
+.icon.list::after,
+.icon.list span {
+  content: "";
+  height: 4px;
+  background: #1a73e8;
+  border-radius: 2px;
+}
+
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card a {
+  display: block;
+  color: #1a73e8;
+  margin-bottom: 0.5rem;
+  word-break: break-word;
+}
+
+.card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.cards.list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 0;
+}
+
+/* LIST VIEW CARD = ONE ROW */
+.cards.list .card {
+  display: grid;
+  grid-template-columns: 60px 2fr 2fr 1.5fr 3fr;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+
+/* Zebra striping */
+.cards.list .card:nth-child(even) {
+  background-color: #f4f6f8;
+}
+
+.list-headers {
+  display: none;
+}
+
+/* Show headers only in list view */
+.cards.list + .list-headers,
+.list-headers:has(+ .cards.list) {
+  display: grid;
+}
+
+/* Safer cross-browser option */
+.cards.list ~ .list-headers {
+  display: none;
+}
+
+/* Recommended version */
+.list-headers {
+  grid-template-columns: 60px 2fr 2fr 1.5fr 3fr;
+  align-items: center;  
+  padding: .5rem 1rem;
+  padding-left: 3rem;
+  font-weight: 600;
+  background-color: #e8f0fe;
+  border-bottom: 2px solid #1a73e8;
+}
+/* Image */
+.cards.list .card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+/* Business name */
+.cards.list .card h2 {
+  margin: 1.5rem;
+  font-size: 1rem;
+}
+
+/* Website link */
+.cards.list .card a {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #1a73e8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Phone + Address */
+.cards.list .card p {
+  margin: 0;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Base badge */
+.badge {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Levels */
+.badge.member {
+  background-color: #e0e0e0;
+  color: #444;
+}
+
+.badge.silver {
+  background-color: #cfd8dc;
+  color: #37474f;
+}
+
+.badge.gold {
+  background-color: #ffeb3b;
+  color: #5d4037;
+}
+
+.card h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Ensure the h2 itself is centered in the card */
+.card {
+  text-align: center;
+}
+
+.cards.list .card {
+  text-align: left;
+}
+
+.cards.list .card h2 {
+  justify-content: flex-start;
+}
+
+.badge.gold {
+  background: linear-gradient(135deg, #ffeb3b, #fbc02d);
+}

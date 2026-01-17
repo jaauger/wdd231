@@ -1,0 +1,171 @@
+/* =========================
+   BASE NAV STYLES
+========================= */
+
+nav {
+  background-color: #fefbf5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  position: relative;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation list */
+nav ul.navigation {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav links */
+nav ul.navigation li a {
+  position: relative;
+  color: #555;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* =========================
+   HOVER + FOCUS FEEDBACK
+========================= */
+
+nav ul.navigation li a:hover,
+nav ul.navigation li a:focus-visible {
+  background-color: #f1f3f4;
+  color: #1a73e8;
+  border-radius: 999px;
+  outline: none;
+}
+
+/* =========================
+   ANIMATED UNDERLINE
+========================= */
+
+nav ul.navigation li a::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.25rem;
+  height: 3px;
+  background-color: #1a73e8;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+nav ul.navigation li a:hover::after,
+nav ul.navigation li a:focus-visible::after {
+  transform: scaleX(1);
+}
+
+/* =========================
+   CURRENT PAGE (WAYFINDING)
+========================= */
+
+nav ul.navigation li a[aria-current="page"] {
+  font-weight: 700;
+  color: #1a73e8;
+}
+
+nav ul.navigation li a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* =========================
+   HAMBURGER BUTTON
+========================= */
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu-toggle:hover {
+  transform: scale(1.1);
+}
+
+.menu-toggle:active {
+  transform: scale(0.95);
+}
+
+/* =========================
+   MOBILE NAV
+========================= */
+
+@media (max-width: 768px) {
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    grid-column: 1 / -1;
+  }
+
+  nav ul.navigation {
+    position: absolute;
+    top: 100%;
+    right: 0;
+
+    flex-direction: column;
+    width: 220px;
+
+    background-color: #fefbf5;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    display: none;
+    margin-top: 0.75rem;
+    padding: 0;
+    z-index: 1000;
+  }
+
+  nav ul.navigation.open {
+    display: flex;
+  }
+
+  nav ul.navigation li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
+  }
+
+  /* Disable underline animation on mobile */
+  nav ul.navigation li a::after {
+    display: none;
+  }
+
+  /* Mobile tap feedback */
+  nav ul.navigation li a:active {
+    background-color: #dde7ff;
+  }
+
+  /* Mobile current-page indicator */
+  nav ul.navigation li a[aria-current="page"] {
+    background-color: #e8f0fe;
+    border-left: 5px solid #1a73e8;
+  }
+}

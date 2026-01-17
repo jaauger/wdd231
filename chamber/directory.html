@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverton Business Directory</title>
+    <meta name="description" content="Riverton City Utah Chamber of Commerce Directory of Business in the City">
+    <meta name="author" content="Jason Auger">
+
+    <meta property="og:title" content="Riverton Business Directory">
+    <meta property="og:description" content="Riverton City Utah Chamber of Commerce Directory of Business in the City">
+    <meta property="og:url" content="https://jaauger.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://jaauger.github.io/wdd231/chamber/images/logo.png">
+
+
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/directory.css"> 
+    <link rel="stylesheet" href="styles/footer.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head> 
+<body>
+    <header>
+        <nav aria-label="Main Navigation"> 
+            <img src="images/logo.png" alt="Riverton City Utah Logo">
+            <!-- <button type="button" id="menu-button" aria-label="small-menu"></button> -->
+             <button
+                  class="menu-toggle"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                >
+                  ☰
+            </button>
+            <ul class="navigation"> 
+                <li><a href="home.html">Home</a></li> 
+                <li><a href="discover.html">Discover</a></li> 
+                <li><a href="directory.html"aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Featured Businesses</h1>
+
+        <div class="view-buttons">
+            <button id="cardView" class="view-btn active" aria-label="Grid view">
+              <span class="icon grid"></span>
+            </button>
+        
+            <button id="listView" class="view-btn" aria-label="List view">
+              <span class="icon list"></span>
+            </button>
+        </div>
+
+        <div class="list-headers">
+          <span></span>
+          <span>Name</span>
+          <span>Website</span>
+          <span>Phone</span>
+          <span>Address</span>
+        </div>
+
+        <div class="cards"></div>
+    </main>
+    <footer role="contentinfo" class="footer-grid">
+        <section class="chamber-info">
+            <p><strong>Riverton Utah Chamber of Commerce</strong></p>
+            <p>12830 S Redwood Road Riverton, Utah 84065</p>
+            <p>businesslicensing@rivertonutah.gov</p>
+            <p>801-254-0704</p>
+        </section>        
+        <section class="middle" aria-label="Social Media Links" role="navigation">
+            <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24h-1.92c-1.504 0-1.797.715-1.797 1.764v2.314h3.587l-.467 3.622h-3.12V24h6.117C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+              </svg>
+            </a>
+        
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter/X" class="social-icon">
+              <svg  class="twitter-x" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26L24 21.75h-6.563l-5.144-6.727-5.917 6.727H3.068l7.73-8.787L0 2.25h6.75l4.708 6.063L18.244 2.25z"/>
+                </svg>
+            </a>
+        
+            <a href="https://github.com/jaauger"
+               target="_blank"
+               rel="noopener"
+               aria-label="GitHub"
+               class="social-icon">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="38"
+                   height="38"
+                   viewBox="0 0 24 24"
+                   fill="currentColor"
+                   aria-hidden="true">
+                <path d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.11 3.29 9.44 7.86 10.97.57.11.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.55-3.88-1.55-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.1 11.1 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.57.23 2.73.11 3.02.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.25 5.67.41.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A11.52 11.52 0 0023.5 12C23.5 5.74 18.27.5 12 .5z"/>
+              </svg>
+            </a>
+        </section>
+         
+        <section class="page-info">            
+            <p><strong>WDD231 Class Project</strong></p>
+            <p>Jason Auger</p>
+            <p id="footer-title">©️<span id="currentyear"></span> Riverton City Chamber of Commerce</p>
+            <p id="lastmodified"></p>
+        </section>  
+    </footer>   
+</body>
+</html>

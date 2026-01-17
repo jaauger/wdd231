@@ -1,0 +1,62 @@
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.chamber-info {
+    display: block;
+    text-align: left;
+    margin-top: 1.5rem;    
+}
+
+.chamber-info p {
+    margin: 0.15rem 0;
+} 
+/* MERGED STYLES */
+.middle {
+  display: flex;
+  justify-content: center;   /* was .socials */
+  align-items: center;
+  gap: 5rem;
+}
+
+.twitter-x {
+  background: black;
+  border-radius: 4px;
+}
+
+.page-info {
+    display: block;
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.page-info p {
+    margin: 0.15rem 0;
+}
+
+@media (max-width: 768px) {
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .chamber-info {
+    display: block;
+    text-align: center;
+  }
+
+  .page-info {
+    display: block;
+    text-align: center;
+  }
+}    
