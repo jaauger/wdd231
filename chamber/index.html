@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riverton Utah</title>
+    <title>Riverton Utah Chamber of Commerce</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <meta name="description" content="Riverton City Utah Chamber of Commerce">
+    <meta name="description" content="Discover the Riverton City Utah Chamber of Commerce—supporting local businesses, driving economic growth, and serving the community.">
     <meta name="author" content="Jason Auger">
 
     <meta property="og:title" content="Riverton Business Directory">
-    <meta property="og:description" content="Riverton City Utah Chamber of Commerce Directory of Business in the City">
+    <meta property="og:description" content="Discover the Riverton City Utah Chamber of Commerce—supporting local businesses, driving economic growth, and serving the community.">
     <meta property="og:url" content="https://jaauger.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="https://jaauger.github.io/wdd231/chamber/images/logo.png">
 
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet">
 
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/datas.js" defer></script>     
+       
     <script src="scripts/index.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/hero-slider.js" defer></script>
@@ -68,7 +68,7 @@
     </section>
 
     <section class="page-content">
-        <h1 class="home">Home</h1>
+        <h2 class="home">Home</h2>
 
         <div class="events-weather">    
             <div class="events">
@@ -82,11 +82,15 @@
             <div class="weather-current">
                 <h2>Current Weather</h2>
                 <div class="weather-icon-row">
-                    <img id="weather-icon" src="" alt="">
+                    <img
+                  id="weather-icon"
+                  src="images/weather-placeholder.png"
+                  alt="Current weather icon"
+                >
                     
                     <div class="weather-text">
                         <p id="temp"></p>
-                        <figcaption id="conditions"></figcaption>
+                        <p id="conditions"></p>
                         <p id="high-temp"></p>
                         <p id="low-temp"></p>
                         <p id="humidity"></p>

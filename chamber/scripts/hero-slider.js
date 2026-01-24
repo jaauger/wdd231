@@ -1,8 +1,8 @@
 const images = [
-  'images/riverton-winter-1.png',
-  'images/riverton-winter-2.png',
-  'images/riverton-winter-3.png',
-  'images/riverton-winter-4.png'
+  'images/riverton-winter-1-sm.webp',
+  'images/riverton-winter-2-sm.webp',
+  'images/riverton-winter-3-sm.webp',
+  'images/riverton-winter-4-sm.webp'
 ];
 
 const heroImg = document.querySelector('#hero-image');
