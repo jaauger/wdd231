@@ -17,7 +17,7 @@ async function apiFetchWeather() {
     const response = await fetch(wdurl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
+      //console.log(data); // testing only
       displayWeatherResults(data); // uncomment when ready
     } else {
         throw Error(await response.text());
@@ -33,7 +33,7 @@ async function apiFetchForecast() {
     const response = await fetch(wfurl);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
+      //console.log(data); // testing only
       displayForecastResults(data); // uncomment when ready
     } else {
       throw Error(await response.text());
@@ -46,7 +46,7 @@ async function apiFetchForecast() {
 apiFetchWeather();
 apiFetchForecast();
 
-const sunriseMT = sunriseUTC.toLocaleTimeString('en-US', { timeZone: 'America/Denver' });
+//const sunriseMT = sunriseUTC.toLocaleTimeString('en-US', { timeZone: 'America/Denver' });
 
 function displayWeatherResults(data) {
   currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
