@@ -25,7 +25,14 @@ function getMembershipLevel(num) {
 }
 
 const displaybusinesss = (businesses) => {
-  const randomThree = [...businesses]
+
+  
+  const qualified = businesses.filter(
+    (business) => business.member === 2 || business.member === 3
+  );
+
+  
+  const randomThree = [...qualified]
     .sort(() => 0.5 - Math.random())
     .slice(0, 3);
 
@@ -33,14 +40,14 @@ const displaybusinesss = (businesses) => {
     const card = document.createElement('section');
     card.classList.add('card');
 
-    /* ---------- Header ---------- */
+    
     const header = document.createElement('div');
     header.classList.add('card-header');
 
     const name = document.createElement('h2');
     name.textContent = business.name;
 
-    /* === MEMBERSHIP BADGE === */
+    
     const badge = document.createElement('span');
     badge.classList.add('membership-badge');
 
@@ -51,17 +58,17 @@ const displaybusinesss = (businesses) => {
     header.appendChild(name);
     header.appendChild(badge);
 
-    /* ---------- Content ---------- */
+    
     const content = document.createElement('div');
     content.classList.add('card-content');
 
-    /* Logo */
+    
     const logo = document.createElement('img');
     logo.src = business.imageurl ?? 'images/placeholder.png';
     logo.alt = `Logo of ${business.name}`;
     logo.loading = 'lazy';
 
-    /* Details */
+    
     const details = document.createElement('div');
     details.classList.add('card-details');
 
@@ -97,6 +104,7 @@ const displaybusinesss = (businesses) => {
     cards.appendChild(card);
   });
 };
+
 
 
     

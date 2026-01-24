@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riverton Utah</title>
-    <meta name="description" content="Riverton City Utah Chamber of Commerce">
-
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Riverton City Utah Chamber of Commerce">
     <meta name="author" content="Jason Auger">
 
     <meta property="og:title" content="Riverton Business Directory">
@@ -27,32 +26,44 @@
     <script src="scripts/datas.js" defer></script>     
     <script src="scripts/index.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/hero-slider.js" defer></script>
 </head>
 
 <body>
 <header>
     <nav aria-label="Main Navigation"> 
-        <img src="images/logo.png" alt="Riverton City Utah Logo">
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-        <ul class="navigation"> 
-            <li><a href="home.html">Home</a></li> 
-            <li><a href="discover.html">Discover</a></li> 
-            <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>                
-        </ul>
-    </nav>
+            <img src="images/logo.png" alt="Riverton City Utah Logo">
+            
+             <button
+                  class="menu-toggle"
+                  aria-label="Toggle navigation"
+                  aria-expanded="false"
+                >
+                  ☰
+            </button>
+            <ul class="navigation"> 
+                <li><a href="index.html" aria-current="page">Home</a></li> 
+                <li><a href="discover.html">Discover</a></li> 
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>                
+            </ul>
+        </nav>
 </header>
 
 <main>
-    <!-- HERO -->
+   
     <section class="hero" aria-labelledby="hero-heading">
         <h1 id="hero-heading">Riverton City, Utah</h1>
 
-        <!-- ✅ CTA added -->
+        
         <a href="join.html" class="hero-cta">Join the Chamber</a>
 
         <p class="tagline"></p>       
-        <img src="images/riverton-winter-1.png" alt="Riverton in Winter">
+        <img
+          id="hero-image"
+          src="images/riverton-winter-1.png"
+          alt="Riverton City"
+        >
         <p class="description"></p>
     </section>
 
@@ -72,7 +83,7 @@
                 <h2>Current Weather</h2>
                 <div class="weather-icon-row">
                     <img id="weather-icon" src="" alt="">
-                    <!--<figcaption id="conditions"></figcaption> -->
+                    
                     <div class="weather-text">
                         <p id="temp"></p>
                         <figcaption id="conditions"></figcaption>
