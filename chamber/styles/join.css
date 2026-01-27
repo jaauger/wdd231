@@ -28,18 +28,14 @@ main h1 {
     flex-direction: column;
     gap: 1.25rem;    
 }
-.form-input input {
-    border: none;
-    padding: 0.6rem 0.75rem;
-    border-left: 5px solid #003cff;
-    border-radius: .5rem;
-}
+.form-input input,
 .form-input textarea {
     border: none;
     padding: 0.6rem 0.75rem;
     border-left: 5px solid #003cff;
     border-radius: .5rem;
 }
+
 .tight-fit {
     display: flex;
     flex-direction: column;    
@@ -54,7 +50,6 @@ main h1 {
     box-shadow: 0 0 rgb(0 0 0 /95%);
     border: none;
     border-radius: .75rem;
-    padding: .5rem;
     text-align: center;
     color: white;
     padding: .75rem;
@@ -71,14 +66,9 @@ main h1 {
 }
 .radio-box {
     display: flex;
-    gap: 2rem;
-  /*  
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 0.5rem;
-  */
+    gap: 2rem;  
 }
+
 .rating-item {
   position: relative;
   display: flex;
@@ -158,7 +148,16 @@ main h1 {
 .membership > div {
   width: 100%;
   max-width: 320px;
+  animation: tierEnter 0.6s ease-out both;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  text-align: center;
+  color: #000;
+  font-size: 1.5rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
 }
+
 @keyframes tierEnter {
   from {
     opacity: 0;
@@ -170,50 +169,21 @@ main h1 {
   }
 }
 
-/* Apply to all tier cards */
-.membership > div {
-  animation: tierEnter 0.6s ease-out both;
-}
-
 .non-prof {
     background-color: rgb(0, 128, 0, .55);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    text-align: center;
-    color: #000;
-    font-size: 1.5rem;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
+    
 }
 .bronze {
     background-color: rgb(205, 127, 50, .55);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    text-align: center;
-    color: #000;
-    font-size: 1.5rem;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
+    
 }
 .silver {
     background-color: rgb(192, 192, 192, .55);
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgb(0 0 0 / 50%);
-    text-align: center;
-    color: #000;
-    font-size: 1.5rem;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
+    
 }
 .gold {
     background-color: rgb(217, 165, 32, .55);
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgb(0 0 0 / 40%);
-    text-align: center;
-    color: #000;
-    font-size: 1.5rem;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
+    
 }
 
 .membership button {    
