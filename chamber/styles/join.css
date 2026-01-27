@@ -1,0 +1,352 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;  
+}
+
+main h1 {
+    text-align: center;
+}
+.display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+    margin-top: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    gap: 3rem;
+}
+.form-input {
+    margin-left: 3rem;
+    max-width: 43rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;    
+}
+.form-input input {
+    border: none;
+    padding: 0.6rem 0.75rem;
+    border-left: 5px solid #003cff;
+    border-radius: .5rem;
+}
+.form-input textarea {
+    border: none;
+    padding: 0.6rem 0.75rem;
+    border-left: 5px solid #003cff;
+    border-radius: .5rem;
+}
+.tight-fit {
+    display: flex;
+    flex-direction: column;    
+}
+
+.button-pos {
+    display: flex;
+    justify-content: center;
+}
+.button-pos input {
+    background-color: #003cff;
+    box-shadow: 0 0 rgb(0 0 0 /95%);
+    border: none;
+    border-radius: .75rem;
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    padding: .75rem;
+    
+}
+.button-pos input:hover {
+  background-color: #002bb8;
+  transform: translateX(-1%) scale(1.05);
+}
+.member-level {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+}
+.radio-box {
+    display: flex;
+    gap: 2rem;
+  /*  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0.5rem;
+  */
+}
+.rating-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+
+  font-weight: 600;
+  cursor: pointer;
+
+  border: 2px solid transparent;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.rating-item input {
+  position: absolute;
+  opacity: 0;
+}
+.rating-item:nth-child(1) {
+  background: rgb(0, 128, 0, .55);   
+  color: #1a1a1a;
+}
+
+.rating-item:nth-child(2) {
+  background: rgb(205, 127, 50, .55);  
+  color: #1a1a1a;
+}
+
+.rating-item:nth-child(3) {
+  background: #D9D9D9;
+  color: #222;
+}
+
+.rating-item:nth-child(4) {
+  background: rgb(217, 165, 32, .55);
+  color: #1a1a1a;  
+}
+.rating-item input:checked + span {
+  text-decoration: underline;
+}
+
+.rating-item:has(input:checked) {
+  outline: 3px solid #003cff;
+  outline-offset: 2px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 25%);
+}
+
+.rating-item:hover {
+  transform: translateY(-2px);
+}
+
+
+.cards {
+  max-width: 40rem;  
+  padding: 0rem;
+
+  margin: 0 auto;  
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  text-align: center;
+  
+}
+.membership-levels {
+    font-size: 1.5rem;
+    border-bottom: 1px solid #000;    
+}
+.membership {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: clamp(1.5rem, 4vw, 4rem);
+
+  justify-items: center;
+  align-items: stretch;
+}
+.membership > div {
+  width: 100%;
+  max-width: 320px;
+}
+@keyframes tierEnter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to all tier cards */
+.membership > div {
+  animation: tierEnter 0.6s ease-out both;
+}
+
+.non-prof {
+    background-color: rgb(0, 128, 0, .55);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+.bronze {
+    background-color: rgb(205, 127, 50, .55);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+.silver {
+    background-color: rgb(192, 192, 192, .55);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 50%);
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+.gold {
+    background-color: rgb(217, 165, 32, .55);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 40%);
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+}
+
+.membership button {    
+    border: none;
+    border-radius: 999px;
+    padding: .6rem 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.non-prof button {
+  background: #145F2B;
+  color: white;
+  box-shadow: 0 0 10px rgb(0 0 0 /80%);
+}
+
+.bronze button {  
+  background: #A46327;
+  color: white;
+  box-shadow: 0 0 10px rgb(0 0 0 /80%);
+}
+
+.silver button {
+  background: #8A8A8A;
+  color: white;
+  box-shadow: 0 0 10px rgb(0 0 0 /80%);
+}
+
+.gold button {
+  background: #B8962E;
+  color: white;
+  box-shadow: 0 0 10px rgb(0 0 0 /80%);
+}
+
+.membership button:hover {
+  filter: brightness(.9);
+}
+.membership > div:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.membership > div:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.membership > div:nth-child(3) {
+  animation-delay: 0.25s;
+}
+
+.membership > div:nth-child(4) {
+  animation-delay: 0.35s;
+}
+
+dialog {
+    width: 450px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+@media (max-width: 900px) {
+
+  .display {
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .form-input {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .membership {
+    gap: 2rem; /* reduce huge desktop spacing */
+  }
+
+  .cards {
+    max-width: 100%;
+  }
+
+}
+@media (min-width: 1101px) {
+  .membership {
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    max-width: 700px;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 600px) {
+
+  main h1 {
+    font-size: 1.6rem;
+  }
+
+  /* Radios stack */
+  .radio-box {
+    grid-template-columns: 1fr;
+  }
+
+  .rating-item {
+    font-size: 0.95rem;
+    padding: 0.6rem 0.9rem;
+  }
+
+  /* Membership cards */
+  .membership {
+    grid-template-columns: 1fr;
+  }
+
+  .non-prof,
+  .bronze,
+  .silver,
+  .gold {
+    font-size: 1.2rem;
+  }
+
+  .membership button {
+    padding: 0.5rem 1.2rem;
+  }
+
+  /* Dialog fits viewport */
+  dialog {
+    width: min(90vw, 400px);
+    height: auto;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+}

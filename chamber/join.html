@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="stylesheet" href="styles/footer.css">
         
     
@@ -23,7 +24,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/datas.js" defer></script> 
+    <script src="scripts/datetime.js" defer></script> 
+    <script src="scripts/modal.js" defer></script>
 </head>
 <body>
     <header>
@@ -45,7 +47,158 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <h1>Chamber of Commerce Membership Application Form</h1>        
+        <div class="display">
+            <form class="form-input" action="thank-you.html" method="get" autocomplete="on">
+                <div class="tight-fit">    
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+                </div>
+                <div class="tight-fit">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+                </div>
+                <div class="tight-fit">
+                    <label for="organization-title">Organization Title</label>
+                    <input type="text" id="organization-title" name="organization-title" title="Only letters, spaces, and hyphens allowed (minimum 7 characters)" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                </div>
+
+                <div class="tight-fit">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="your.name@business.com" required>
+                </div>
+                <div class="tight-fit">
+                    <label for="mobile-number">Mobile Number</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" title="Enter your mobile phone number" autocomplete="tel" required> 
+                </div>
+                <div class="tight-fit">
+                    <label for="organization-name">Organization Name</label>
+                    <input type="text" id="organization-name" name="organization-name" title="Enter your organization name" autocomplete="organization" required>
+                </div>
+                <p class="member-level">Please select membership level</p>
+                <div class="radio-box">
+
+                    <label class="rating-item">
+                        <input type="radio" name="rating" value="np" required>
+                        <span>Non-Profit</span>
+                    </label>
+
+                    <label class="rating-item">
+                        <input type="radio" name="rating" value="bronze">
+                        <span>Bronze Member</span>
+                    </label>
+
+                    <label class="rating-item">
+                        <input type="radio" name="rating" value="silver">
+                        <span>Silver Member</span>
+                    </label>
+
+                    <label class="rating-item">
+                        <input type="radio" name="rating" value="gold">
+                        <span>Gold Member</span>
+                    </label>
+                </div>
+                <div class="tight-fit">
+                    <label for="description">Business Description</span></label>
+                    <textarea id="description" name="description" title="Describe your organization"></textarea>
+                </div>   
+                <input type="hidden" name="timestamp" id="timestamp"> 
+                <div class="button-pos">                 
+                    <input type="submit" name="post-button" id="post-button" value="Join the Chamber Today!">             
+                </div>               
+            </form>
+           
+            <div class="cards">
+                <p class="membership-levels">Available Membership Levels</p>
+                <div class="membership">
+                    
+                    <div class="non-prof">
+                        <p id="np">Non Profit</p>
+                        <p class="member-fee">$50.00/Yr</p>
+                        <button type="button" id="np-modal-op-btn">Learn More</button>
+                    </div>
+                    <div class="bronze">
+                        <p id="bronze">Bronze</p>
+                        <p class="member-fee">$250.00/Yr</p>
+                        <button type="button" id="br-modal-op-btn">Learn More</button>
+                    </div>
+                    <div class="silver">
+                        <p id="silver">Silver</p>
+                        <p class="member-fee">$500.00/Yr</p>
+                        <button type="button" id="si-modal-op-btn">Learn More</button>
+                    </div>
+                    <div class="gold">
+                        <p id="gold">Gold</p>
+                        <p class="member-fee">$1,000.00/Yr</p>
+                        <button type="button" id="go-modal-op-btn">Learn More</button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div>
+            <dialog class="my-modal" id="np-modal">
+                <h2>Non Profit Membership</h2>
+                <p><strong>Best for:</strong> Community organizations & charities</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Business listing in the online directory</li>
+                    <li>Non-profit designation badge</li>
+                    <li>Invitations to networking events</li>
+                    <li>Monthly chamber newsletter</li>
+                    <li>Event calendar postings (limited)</li>
+                    <li>Access to business resources</li>
+                </ul>
+                <button id="np-modal-cl-btn" >Close</button>
+            </dialog>
+            <dialog class="my-modal" id="br-modal">
+                <h2>Bronze</h2>
+                <p><strong>Best For:</strong> Small businesses & start-ups</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Enhanced directory listing</li>
+                    <li>Member spotlight opportunities</li>
+                    <li>Event discounts</li>
+                    <li>Ribbon-cutting ceremony</li>
+                    <li>Job board postings (limited)</li>
+                    <li>Social media mentions</li>
+                </ul>
+                <button id="br-modal-cl-btn" >Close</button>
+            </dialog>
+            <dialog class="my-modal" id="si-modal">
+                <h2>Silver</h2>
+                <p><strong>Best For:</strong> Growing or Established businesses</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Premium directory placement</li>
+                    <li>Featured homepage listing rotation</li>
+                    <li>Marketing workshops & training</li>
+                    <li>Unlimited job postings</li>
+                    <li>Email newsletter features</li>
+                    <li>Sponsorship discounts</li>
+                    <li>Access to chamber committees</li>
+                </ul>
+                <button id="si-modal-cl-btn" >Close</button>
+            </dialog>
+            <dialog class="my-modal" id="go-modal">
+                <h2>Gold Membership</h2>
+                <p><strong>Best For:</strong> Market Leaders or Community anchors</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Priority homepage spotlight</li>
+                    <li>Event sponsorship recognition</li>
+                    <li>Logo placement on chamber site</li>
+                    <li>Speaking opportunities at events</li>
+                    <li>Exclusive executive roundtables</li>
+                    <li>Advocacy representation</li>
+                    <li>VIP networking receptions</li>
+                    <li>Custom promotional campaigns</li>
+                </ul>
+                <button id="go-modal-cl-btn" >Close</button>
+            </dialog>
+        </div> 
+
+    </main>
     <footer role="contentinfo" class="footer-grid">
         <section class="chamber-info">
             <p><strong>Riverton Utah Chamber of Commerce</strong></p>
