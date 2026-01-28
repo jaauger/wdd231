@@ -32,10 +32,6 @@ nav ul.navigation li a {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* =========================
-   HOVER + FOCUS FEEDBACK
-========================= */
-
 nav ul.navigation li a:hover,
 nav ul.navigation li a:focus-visible {
   background-color: #f1f3f4;
@@ -43,10 +39,6 @@ nav ul.navigation li a:focus-visible {
   border-radius: 999px;
   outline: none;
 }
-
-/* ========================= 
-   ANIMATED UNDERLINE
-========================= */
 
 nav ul.navigation li a::after {
   content: "";
@@ -67,22 +59,16 @@ nav ul.navigation li a:focus-visible::after {
   transform: scaleX(1);
 }
 
-/* =========================
-   CURRENT PAGE (WAYFINDING)
-========================= */
+
 
 nav ul.navigation li a[aria-current="page"] {
   font-weight: 700;
-  color: #1558b0;;
+  color: #0b2d5a;;
 }
 
 nav ul.navigation li a[aria-current="page"]::after {
   transform: scaleX(1);
 }
-
-/* =========================
-   HAMBURGER BUTTON
-========================= */
 
 .menu-toggle {
   display: none;
@@ -100,10 +86,6 @@ nav ul.navigation li a[aria-current="page"]::after {
 .menu-toggle:active {
   transform: scale(0.95);
 }
-
-/* =========================
-   MOBILE NAV
-========================= */
 
 @media (max-width: 768px) {
 
