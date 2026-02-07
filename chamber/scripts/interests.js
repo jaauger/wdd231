@@ -33,8 +33,11 @@ interests.interests.forEach(place => {
   button.textContent = "Learn More";
   button.href = place.url;
   button.target = "_blank";
-  button.classList.add("learn-more");
-
+  button.classList.add("learn-more");  
+  button.setAttribute(
+  "aria-label",
+  `Learn more about ${place.name}`
+);  
   // ---- Assemble ----
   card.append(title, figure, address, desc, button);
   container.appendChild(card);
