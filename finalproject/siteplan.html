@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Plan | Smart Building Systems Explorer</title>
+  <meta name="description" content="Site plan for the Smart Building Systems Explorer WDD231 final project." />
+  <meta name="author" content="Jason Auger"/>
+
+  <!-- Typography (Google Font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+
+  
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="title">
+        <h1>Site Plan: Smart Building Systems Explorer</h1>
+        
+      </div>
+
+      
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+     
+      <section class="card" id="site-name">
+        <h2>1. Site Name </h2>
+        <p><strong>Smart Building Systems Explorer</strong></p>
+        <p class="muted">
+          <strong>Reason:</strong> This name clearly communicates the purpose of the site—to allow users to explore
+          commercial buildings and the automation systems they use. “Explorer” signals browsing and discovery, while
+          “Smart Building Systems” reflects the technical focus on HVAC, controls, and energy monitoring.
+        </p>
+      </section>
+
+      
+      <section class="card" id="purpose">
+        <h2>2. Site Purpose </h2>
+        <p>This website will:</p>
+        <ul>
+          <li>Educate visitors about modern commercial building automation systems.</li>
+          <li>Showcase example buildings and the technologies they use (HVAC platforms, controllers, monitoring).</li>
+          <li>Allow users to filter and/or sort buildings by system type and features.</li>
+          <li>Provide a form for requesting a building automation assessment.</li>
+          <li>Demonstrate responsive design, accessibility, and data-driven content using HTML, CSS, and JavaScript.</li>
+        </ul>
+      </section>
+
+      
+      <section class="card" id="scenarios">
+        <h2>3. Scenarios </h2>
+
+        <h3>Scenario 1</h3>
+        <p>
+          A facilities manager wants to compare different HVAC automation platforms used in office buildings so they can
+          understand upgrade options before contacting an integrator.
+        </p>
+
+        <h3>Scenario 2</h3>
+        <p>
+          A building automation student is researching smart building technologies and wants to browse example buildings
+          and view details about controllers, sensors, and energy monitoring systems.
+        </p>
+      </section>
+
+      
+      <section class="card" id="colors">
+        <h2>4. Color Schema</h2>
+        <p class="muted">
+          The following colors will be used across the site. This site plan document also uses these colors (headings,
+          accents, and layout backgrounds) to satisfy the rubric requirement.
+          
+        </p>
+
+        <div class="two-col">
+          <div>
+            <table aria-label="Color schema table">
+              <thead>
+                <tr>
+                  <th>Color</th>
+                  <th>Hex</th>
+                  <th>Where Used</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Deep Blue</td>
+                  <td><code>#1a73e8</code></td>
+                  <td>Primary buttons, links, headings accents, interactive states</td>
+                </tr>
+                <tr>
+                  <td>Slate Gray</td>
+                  <td><code>#2f3e46</code></td>
+                  <td>Header/footer backgrounds, section titles, key UI regions</td>
+                </tr>
+                <tr>
+                  <td>Light Gray</td>
+                  <td><code>#f4f6f8</code></td>
+                  <td>Page background, subtle section separation</td>
+                </tr>
+                <tr>
+                  <td>White</td>
+                  <td><code>#ffffff</code></td>
+                  <td>Cards, content panels, readable surfaces</td>
+                </tr>
+                <tr>
+                  <td>Accent Green</td>
+                  <td><code>#3cb371</code></td>
+                  <td>Highlights, success messages, small emphasis elements</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div>
+            <h3>Color Application Notes</h3>
+            <ul>
+              <li>Buttons and primary links will use <strong>Deep Blue</strong> with white text.</li>
+              <li>Site chrome (header/footer) will use <strong>Slate Gray</strong> for strong contrast.</li>
+              <li>Cards sit on <strong>Light Gray</strong> background for clean separation.</li>
+              <li><strong>Accent Green</strong> used sparingly for “success/complete” indicators.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="card" id="typography">
+        <h2>5. Typography </h2>
+        <p><strong>Primary Font:</strong> Noto Sans (Google Fonts)</p>
+        <ul>
+          <li><strong>Headings (h1–h3):</strong> Bold weights for hierarchy and scanning.</li>
+          <li><strong>Body text:</strong> Regular weight for readability.</li>
+          <li><strong>Navigation:</strong> Semi-bold for clarity.</li>
+          <li><strong>Buttons:</strong> Semi-bold for emphasis.</li>
+        </ul>
+        <p class="muted">
+          This site plan is displayed using <strong>Noto Sans</strong> to demonstrate typography usage in the document.
+        </p>
+      </section>
+
+      
+      <section class="card" id="wireframes">
+        <h2>6. Wireframes </h2>
+        <p class="muted">
+          Wireframes represent the planned layout of the home page in mobile and wider views.
+        </p>
+
+        <div class="wireframes">
+          
+          <div class="wireframe" aria-label="Mobile wireframe">
+            <div class="wf-title">
+              <h3 style="margin:0;">Home Page Wireframe</h3>
+              <span class="badge">Mobile</span>
+            </div>
+
+            <div class="boxes">
+              <div class="box">Header: Logo + ☰ Menu</div>
+              <div class="box">Hero / Intro Text</div>
+              <div class="box">Search + Filters (stacked)</div>
+              <div class="box">Building Cards (single column)</div>
+              <div class="box">Assessment Request Form</div>
+              <div class="box">Footer</div>
+            </div>
+          </div>
+
+          
+          <div class="wireframe" aria-label="Desktop wireframe">
+            <div class="wf-title">
+              <h3 style="margin:0;">Home Page Wireframe</h3>
+              <span class="badge">Wide View</span>
+            </div>
+
+            <div class="boxes">
+              <div class="box">Header: Logo + Navigation Links</div>
+              <div class="box">Hero Section (w/ image or banner)</div>
+
+              <div class="row three" aria-label="Desktop main layout row">
+                <div class="box">Filters Sidebar</div>
+                <div class="box">Building Cards Grid</div>
+              </div>
+
+              <div class="box">Assessment Request Form</div>
+
+              <div class="row two" aria-label="Footer columns row">
+                <div class="box">Footer Column 1</div>
+                <div class="box">Footer Column 2/3</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p style="margin:0;">
+        <strong>WDD231 Site Plan</strong> • Smart Building Systems Explorer • Typography: Noto Sans • Colors: Deep Blue / Slate / Light Gray / White / Accent Green
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
