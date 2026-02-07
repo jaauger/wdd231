@@ -30,7 +30,7 @@ interests.interests.forEach(place => {
 
   // ---- Button ----
   const button = document.createElement("a");
-  button.textContent = "Learn More";
+  button.textContent = `Learn More about ${place.name}`;
   button.href = place.url;
   button.target = "_blank";
   button.classList.add("learn-more");  
