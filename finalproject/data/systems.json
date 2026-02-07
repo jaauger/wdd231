@@ -1,0 +1,18 @@
+[
+  {
+    "site": "Riverton Hospital",
+    "system": "Niagara",
+    "city": "Riverton",
+    "sqft": 250000,
+    "energyIndex": 72,
+    "status": "Operational"
+  },
+  {
+    "site": "Summit Office Tower",
+    "system": "BACnet",
+    "city": "Salt Lake City",
+    "sqft": 180000,
+    "energyIndex": 64,
+    "status": "Upgrade Planned"
+  }
+]

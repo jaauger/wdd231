@@ -1,0 +1,19 @@
+<main>
+  <h1>Building Systems</h1>
+
+  <section id="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="niagara">Niagara</button>
+    <button data-filter="bacnet">BACnet</button>
+  </section>
+
+  <section id="systemsGrid" class="grid"></section>
+
+  <!-- Modal -->
+  <dialog id="detailsModal">
+    <div id="modalContent"></div>
+    <button id="closeModal">Close</button>
+  </dialog>
+</main>
+
+<script type="module" src="scripts/systems.js"></script>

@@ -1,0 +1,11 @@
+<main>
+  <h1>Form Submission</h1>
+  <div id="results"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.querySelector("#results").innerHTML =
+      `<p>Name: ${params.get("name")}</p>
+       <p>Email: ${params.get("email")}</p>`;
+  </script>
+</main>

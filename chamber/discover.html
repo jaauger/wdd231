@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/base.css">
-
+    <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/footer.css">
     
     
@@ -25,6 +25,9 @@
 
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/datas.js" defer></script> 
+    <script src="scripts/interests.js" type="module"></script>
+    <script src="scripts/visit.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -46,7 +49,13 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="interests">
+          <h1>Places of Interest</h1>
+          <div class="visit-message" id="visitMessage"></div>
+          <div id="interest-cards"></div>
+        </section>
+    </main>
     <footer role="contentinfo" class="footer-grid">
         <section class="chamber-info">
             <p><strong>Riverton Utah Chamber of Commerce</strong></p>

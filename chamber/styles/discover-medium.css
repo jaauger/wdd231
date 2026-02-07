@@ -1,0 +1,112 @@
+/*
+* {
+  box-sizing: border-box;
+}
+
+.interest-card {  
+  border: solid 1px #ccc;
+  border-radius: .5rem;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);  
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "desc"
+    "address"
+    "button";
+  
+  margin-bottom: 1rem; 
+  padding-bottom: 1rem; 
+}
+
+.interest-card h2 {
+  padding: 0 1.5rem;
+  grid-area: title;
+  
+}
+
+.interest-card figure { 
+  
+  grid-area: image; 
+}
+
+.interest-card h2,
+.interest-card p,
+.interest-card address {
+  
+  text-align: left;
+}
+
+
+.interest-card address { 
+  padding: 0 1.5rem;
+  grid-area: address;
+  
+ }
+
+.interest-card p {
+  padding: 0 1.5rem;
+  grid-area: desc;
+  
+ }
+
+.interest-card a {
+  grid-area: button;  
+  padding: .4rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.learn-more {
+  text-decoration: none;
+  border-radius: 1rem;
+  background-color: #1a73e8;
+  color: white;
+}
+
+@media (min-width: 700px) {
+
+  .interest-card {
+    margin-bottom: 1rem;
+    grid-template-areas:
+      "image title"
+      "image desc"
+      "image address"
+      "image button";
+  }
+
+  .interest-card h2,
+  .interest-card p,
+  .interest-card address {
+    
+    text-align: left;
+  }
+}  
+
+@media (min-width: 1400px) { /* Large View Layout 
+  #interest-cards {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+  }
+  
+}
+*/
+
+@media (min-width: 700px) {
+.interest-card {  
+  
+  display: grid;
+  grid-template-areas: 
+  "image title"
+  "image desc"
+  "image addr"
+  "image button"
+  ;
+}  
+}
+
+
+
