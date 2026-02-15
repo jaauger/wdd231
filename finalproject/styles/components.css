@@ -1,0 +1,183 @@
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header {
+
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+}
+
+.page-header h1 {
+
+  margin: 0 0 .5rem 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.page-header p {
+
+  margin: 0;
+  color: var(--slate-700);
+  max-width: 700px;
+}
+
+
+/* =========================================
+   SECTION BACKGROUNDS
+========================================= */
+
+.container section:nth-child(odd) {
+
+  background: white;
+}
+
+.container section:nth-child(even) {
+
+  background: #f4f6f8;
+}
+
+.container section {
+
+  padding: clamp(1rem, 3vw, 2rem);
+  border-radius: var(--radius-md);
+  margin-top: 1.5rem;
+}
+
+
+/* =========================================
+   SECTION FLEX LAYOUT (Mobile First)
+========================================= */
+
+.section-flex {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+
+/* Text container */
+
+.section-flex div {
+
+  width: 100%;
+  max-width: 700px;
+}
+
+.section-flex h2 {
+
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+}
+
+.section-flex p {
+
+  margin: 0;
+  line-height: 1.5;
+  color: var(--slate-700);
+}
+
+
+/* Image container */
+
+.section-flex figure {
+
+  width: 100%;
+  max-width: 500px;
+  margin: 0;
+}
+
+.section-flex img {
+
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-flex figcaption {
+
+  font-size: .8rem;
+  text-align: center;
+  margin-top: .5rem;
+  color: var(--slate-700);
+}
+
+/* =========================================
+   TABLET BREAKPOINT
+========================================= */
+
+@media (min-width: 768px) {
+
+  .section-flex {
+
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .section-flex div {
+
+    flex: 1;
+  }
+
+  .section-flex figure {
+
+    flex: 1;
+    max-width: 450px;
+  }
+
+}
+
+
+/* =========================================
+   DESKTOP BREAKPOINT
+========================================= */
+
+@media (min-width: 1024px) {
+
+  .section-flex {
+
+    gap: 3rem;
+  }
+
+  .section-flex figure {
+
+    max-width: 500px;
+  }
+}
+
+/* =========================================
+   LARGE DESKTOP BREAKPOINT
+========================================= */
+
+@media (min-width: 1400px) {
+
+  .section-flex figure {
+
+    max-width: 550px;
+  }
+
+}
+
+/* =========================================
+   OPTIONAL HOVER EFFECT (SUBTLE)
+========================================= */
+
+.container section {
+
+  transition: transform .15s ease, box-shadow .15s ease;
+
+}
+
+.container section:hover {
+
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+}

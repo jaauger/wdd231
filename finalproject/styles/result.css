@@ -1,0 +1,97 @@
+/* =========================================
+   FULL HEIGHT PAGE LAYOUT
+   Push footer to bottom
+========================================= */
+
+html,
+body {
+  height: 100%;
+}
+
+.page-container {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+
+}
+
+
+/* =========================================
+   CONFIRMATION CARD
+========================================= */
+
+.confirmation {
+
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Headings */
+
+.confirmation h2 {
+
+  margin-top: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.confirmation h3 {
+
+  margin-top: 1.5rem;
+}
+
+
+/* Paragraph */
+
+.confirmation p {
+
+  color: var(--slate-700);
+}
+
+
+/* List */
+
+.confirmation ul {
+
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.confirmation li {
+
+  margin-bottom: .5rem;
+}
+
+
+/* Button alignment */
+
+.confirmation .btn-primary {
+
+  margin-top: 1rem;
+}
+
+
+/* =========================================
+   FOOTER ALWAYS AT BOTTOM
+========================================= */
+
+footer {
+
+  margin-top: auto;
+}

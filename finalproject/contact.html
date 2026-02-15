@@ -1,30 +1,81 @@
-<main>
-  <h1>Request a Building Assessment</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Systems | Contact Us</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Explore smart building automation systems inspired by open integration platforms like Niagara. Let us assess your building" />
+  <meta name="author" content="Jason Auger"> 
+  
+  <meta property="og:title" content="Systems | Contact Us">
+  <meta property="og:description" content="Explore smart building automation systems inspired by open integration platforms like Niagara. Let us assess your building">
+  <meta property="og:url" content="https://jaauger.github.io/wdd231/finalproject/contact.html">
+  <meta property="og:image" content="https://jaauger.github.io/wdd231/finalproject/images/logo.png">
 
-  <form action="form-action.html" method="get">
-    <label>
-      Name:
-      <input type="text" name="name" required>
-    </label>
+  <link rel="stylesheet" href="styles/base.css" />  
+  <link rel="stylesheet" href="styles/contact.css" />
 
-    <label>
-      Email:
-      <input type="email" name="email" required>
-    </label>
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/contact.js" defer></script>
 
-    <label>
-      Building Type:
-      <select name="building">
-        <option value="office">Office</option>
-        <option value="hospital">Hospital</option>
-      </select>
-    </label>
-
-    <label>
-      Notes:
-      <textarea name="notes"></textarea>
-    </label>
-
-    <button type="submit">Submit</button>
-  </form>
-</main>
+</head>
+<body>
+  <div class="page-container">
+    <header>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-left">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Smart Building Systems Explorer logo">
+          </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+        <ul id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="components.html">Smart Components</a></li>
+          <li><a href="systems.html">Smart Buildings</a></li>
+          <li><a href="contact.html" aria-current="page">Request Assessment</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Request a Building Assessment</h1>
+    
+      <form action="form-action.html" method="get">
+        <label>
+          Name:
+          <input type="text" name="name" required>
+        </label>
+      
+        <label> 
+          Email:
+          <input type="email" name="email" required>
+        </label>
+      
+        <label>
+          Building Type:
+          <select name="building" id="buildingType">
+            <option value="office">Office</option>
+            <option value="hospital">Hospital</option>
+          </select>
+        </label>
+      
+        <label>
+          Notes:
+          <textarea name="notes"></textarea>
+        </label>
+      
+        <button type="submit">Request an Assessment Now!</button>
+      </form>
+    </main> 
+    <footer>
+        <p>
+        WDD231 Student Project — Smart Building Systems Explorer
+      </p>
+    </footer>
+  </div>  
+</body>
+</html>

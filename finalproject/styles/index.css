@@ -1,0 +1,279 @@
+/* ===============================
+   HERO SECTION
+================================ */
+
+.hero {
+
+  position: relative;
+
+  min-height: clamp(400px, 60vh, 700px);
+  display: grid;
+  place-items: center;
+  padding: clamp(2rem, 5vw, 4rem) 1rem;
+
+  background:
+    linear-gradient(
+      rgba(31, 41, 51, 0.75),
+      rgba(31, 41, 51, 0.75)
+    ),
+    url("../images/smart-building-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  color: white;
+  text-align: center;
+
+}
+
+.hero-content {
+
+  max-width: 720px;
+  padding: 0 1rem;
+
+}
+
+.hero h2 {
+
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+
+}
+
+.hero p {
+
+  font-size: clamp(.95rem, 2vw, 1.1rem);
+  margin-bottom: 1.75rem;
+  background-color: rgb(0, 0, 0, .25);
+  border-radius: 1rem; 
+  color: rgb(255, 255, 255);
+}
+
+
+/* ===============================
+   CTA BUTTONS
+================================ */
+
+.cta-buttons {
+
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  align-items: center;
+
+}
+
+
+/* ===============================
+   CONTENT CONTAINER
+================================ */
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+}
+
+
+/* ===============================
+   INFO SECTIONS
+================================ */
+
+.info-card {
+
+  padding: 1rem;
+
+}
+
+.section-flex {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.section-flex div {
+
+  max-width: 700px;
+
+}
+
+.section-flex figure {
+
+  width: 100%;
+  max-width: 600px;
+  margin: 0;
+
+}
+
+.section-flex img {
+
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+.section-flex figcaption {
+
+  font-size: .85rem;
+  text-align: center;
+  margin-top: .5rem;
+
+}
+
+.section-flex p {
+
+  padding: 0;
+}
+
+
+/* ===============================
+   SENSOR SECTION
+================================ */
+
+.sensor-header {
+
+  padding: 1rem;
+}
+
+.sensor-header h2,
+.sensor-header p {
+
+  margin: 0 0 .5rem 0;
+}
+
+.info-cards {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sensor-card {
+
+  background-color: #3e4c59;
+  color: white;
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.sensor-card h3 {
+
+  margin-top: 0;
+  text-align: center;
+}
+
+
+/* ===============================
+   FEATURED BUILDINGS
+================================ */
+
+.featured {
+
+  padding: 1rem;
+}
+
+.card-grid {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+}
+
+.card-grid figure {
+
+  background: white;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1rem;
+
+}
+
+.card-grid img {
+
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+
+
+/* ===============================
+   TABLET BREAKPOINT
+================================ */
+
+@media (min-width: 640px) {
+
+  .cta-buttons {
+
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .info-cards {
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/* ===============================
+   DESKTOP BREAKPOINT
+================================ */
+
+@media (min-width: 900px) {
+
+  .section-flex {
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .section-flex:nth-child(even) {
+
+    flex-direction: row-reverse;
+  }
+
+  .section-flex figure {
+
+    flex: 1;
+  }
+
+  .section-flex div {
+
+    flex: 1;
+    padding: 1rem 2rem;
+  }
+
+  .info-cards {
+
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  .card-grid {
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  }
+
+}
+
+/* ===============================
+   LARGE DESKTOP BREAKPOINT
+================================ */
+
+@media (min-width: 1400px) {
+  .card-grid {
+
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+  }
+}

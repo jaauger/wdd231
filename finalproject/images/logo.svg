@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="Smart Building Systems Explorer Logo">
+  
+  <!-- Icon Background -->
+  <rect x="0" y="10" width="60" height="60" rx="12" fill="#1a73e8"/>
+
+  <!-- Building -->
+  <rect x="18" y="22" width="24" height="36" rx="4" fill="#ffffff"/>
+
+  <!-- Windows -->
+  <g fill="#1a73e8">
+    <rect x="22" y="26" width="5" height="5" rx="1"/>
+    <rect x="30" y="26" width="5" height="5" rx="1"/>
+    <rect x="22" y="34" width="5" height="5" rx="1"/>
+    <rect x="30" y="34" width="5" height="5" rx="1"/>
+    <rect x="22" y="42" width="5" height="5" rx="1"/>
+    <rect x="30" y="42" width="5" height="5" rx="1"/>
+  </g>
+
+  <!-- Network Nodes -->
+  <g stroke="#ffffff" stroke-width="2" stroke-linecap="round">
+    <line x1="6" y1="35" x2="18" y2="35"/>
+    <line x1="54" y1="35" x2="42" y2="35"/>
+  </g>
+
+  <circle cx="6" cy="35" r="4" fill="#ffffff"/>
+  <circle cx="54" cy="35" r="4" fill="#ffffff"/>
+
+  <!-- Text -->
+  <text x="80" y="38" font-family="Noto Sans, sans-serif" font-size="20" font-weight="700" fill="#ffffff">
+    Smart Building
+  </text>
+  <text x="80" y="58" font-family="Noto Sans, sans-serif" font-size="16" font-weight="500" fill="#1a73e8">
+    Systems Explorer
+  </text>
+
+</svg>

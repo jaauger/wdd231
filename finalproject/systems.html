@@ -1,19 +1,121 @@
-<main>
-  <h1>Building Systems</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systems | Smart Building Systems Explorer</title>
+  <meta name="description" content="Explore smart building automation systems inspired by open integration platforms like Niagara aournd the world." />
+  <meta name="author" content="Jason Auger"> 
+  
+  <meta property="og:title" content="Systems | Smart Building Systems Explorer">
+  <meta property="og:description" content="Explore smart building automation systems inspired by open integration platforms like Niagara aournd the world..">
+  <meta property="og:url" content="https://jaauger.github.io/wdd231/finalproject/systems.html">
+  <meta property="og:image" content="https://jaauger.github.io/wdd231/finalproject/images/logo.png">
 
-  <section id="filters">
-    <button data-filter="all">All</button>
-    <button data-filter="niagara">Niagara</button>
-    <button data-filter="bacnet">BACnet</button>
-  </section>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/systems.css"/>
 
-  <section id="systemsGrid" class="grid"></section>
+  <script type="module" src="scripts/systems.js"></script>
+  <script src="scripts/nav.js" defer></script>
+ 
 
-  <!-- Modal -->
-  <dialog id="detailsModal">
-    <div id="modalContent"></div>
-    <button id="closeModal">Close</button>
-  </dialog>
-</main>
+</head>
+ 
+<body>
+  <div class="page-container">
+    <header>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-left">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Smart Building Systems Explorer logo">
+          </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
 
-<script type="module" src="scripts/systems.js"></script>
+        <ul id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="components.html">Smart Components</a></li>
+          <li><a href="systems.html" aria-current="page">Smart Buildings</a></li>
+          <li><a href="contact.html">Request Assessment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    
+      <section class="page-header">
+        <h2>Smart Buildings Around the World</h2> 
+        <p>
+          Learn how smart buildings integrate controllers, analytics platforms, and
+          secure networks into a unified supervisory environment.
+        </p>
+      </section>
+      <section class="controls">
+        <label>
+          Show:
+          <select id="typeFilter">
+            <option value="all">All</option>
+          </select>
+        </label>
+      
+        <label>
+          Sort by Size:
+          <select id="sortSelect">
+            <option value="none">None</option>
+            <option value="sizeAsc">Small → Large</option>
+            <option value="sizeDesc">Large → Small</option>
+          </select>
+        </label>
+      </section>
+    
+    <div id="systems-grid" class="card-grid"></div>
+      <!-- INTEGRATION PLATFORMS -->
+           
+      <section class="capabilities-section">
+        <h2>Integration Platforms & Protocols</h2>
+        <p>
+          These buildings integrate multiple protocols and open frameworks into unified supervisory systems.
+        </p>
+      
+        <div id="protocol-badges" class="badge-group"></div>
+      </section>
+
+
+      <!-- CONTROLLERS -->
+      <section class="capabilities-section">
+        <h2>Controllers & Field Devices</h2>
+        <p>
+          Distributed controllers manage HVAC equipment, lighting systems, and plant operations.
+        </p>
+      
+        <div id="controller-badges" class="badge-group"></div>
+      </section>
+
+
+      <!-- NETWORKING -->
+      <section class="capabilities-section">
+        <h2>Cybersecurity & Networking</h2>
+        <p>
+          Secure network architectures protect building systems and enable reliable remote access.
+        </p>
+      
+        <div id="networking-badges" class="badge-group"></div>
+      </section>
+
+    
+      <dialog id="systemModal">
+        <button id="closeModal" aria-label="Close dialog">✕</button>
+        <div id="modalContent"></div>
+      </dialog>
+    </main>
+
+    <footer>
+      <p>WDD231 Student Project — Systems Page</p>
+    </footer>
+  </div>  
+</body>
+</html>

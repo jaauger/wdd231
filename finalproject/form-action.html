@@ -1,11 +1,79 @@
-<main>
-  <h1>Form Submission</h1>
-  <div id="results"></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Submitted | Smart Building Systems Explorer</title> 
+  <meta name="description" content="Explore smart building automation systems inspired by open integration platforms like Niagara. The assessment has been scheduled" />
+  <meta name="author" content="Jason Auger"> 
+  
+  <meta property="og:title" content="Systems | Smart Building Systems Explorer">
+  <meta property="og:description" content="Explore smart building automation systems inspired by open integration platforms like Niagara aournd the world..">
+  <meta property="og:url" content="https://jaauger.github.io/wdd231/finalproject/systems.html">
+  <meta property="og:image" content="https://jaauger.github.io/wdd231/finalproject/images/logo.png">
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    document.querySelector("#results").innerHTML =
-      `<p>Name: ${params.get("name")}</p>
-       <p>Email: ${params.get("email")}</p>`;
-  </script>
-</main>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/base.css"/>
+  <link rel="stylesheet" href="styles/result.css"/>
+
+  <script src="scripts/nav.js" defer></script>
+
+</head>
+
+<body>
+  <div class="page-container">
+    <header>
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <div class="nav-left">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Smart Building Systems Explorer logo">
+          </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
+
+        <ul>
+          <ul id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="components.html">Smart Components</a></li>
+          <li><a href="systems.html">Smart Buildings</a></li>
+          <li><a href="contact.html">Request Assessment</a></li>
+        </ul>
+        </ul>
+      </nav>
+    </header>
+
+    <main>    
+      <section class="confirmation">
+        <h2>Thank You for Your Request!</h2>
+      
+        <p>
+          Your building assessment request has been submitted successfully.
+          In a real production system, a specialist would contact you within
+          two business days.
+        </p>
+      
+        <h3>What Happens Next?</h3>
+        <ul>
+          <li>Review of existing building systems</li>
+          <li>Energy savings analysis</li>
+          <li>Integration opportunities</li>
+          <li>Analytics recommendations</li>
+        </ul>
+      
+        <a href="index.html" class="btn-primary">Return to Home</a>
+      </section>
+    
+    </main>
+
+    <footer>
+      <p>
+        WDD231 Student Project — This site is for educational purposes only.
+      </p>
+    </footer>
+  </div>  
+</body>
+</html>

@@ -1,39 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Explore smart building automation systems and energy performance data.">
-  <meta name="author" content="Jason Auger">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Smart Building Systems Explorer</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systems | Smart Building Systems Explorer</title>
+  <meta name="description" content="Explore smart building automation systems inspired by open integration platforms like Niagara." />
+  <meta name="author" content="Jason Auger"> 
+  
+  <meta property="og:title" content="Systems | Smart Building Systems Explorer">
+  <meta property="og:description" content="Explore smart building automation systems inspired by open integration platforms like Niagara.">
+  <meta property="og:url" content="https://jaauger.github.io/wdd231/finalproject/index.html">
+  <meta property="og:image" content="https://jaauger.github.io/wdd231/finalproject/images/logo.png">
+  
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/base.css" />  
+  <link rel="styleSheet" href="styles/index.css"/>
 
-  <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="styles/main.css">
-
-  <script type="module" src="scripts/main.js"></script>
+  <script src="scripts/nav.js" defer></script>
 </head>
 
 <body>
-<header>
-  <nav class="nav">
-    <button id="menuBtn" aria-label="Open menu">☰</button>
-    <ul id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="systems.html">Systems</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="page-container"> 
+    <header>
+      <nav class="main-nav" aria-label="Primary Navigation">
 
-<main>
-  <section class="hero">
-    <h1>Smart Building Systems Explorer</h1>
-    <p>Discover how commercial buildings use automation to manage comfort and energy.</p>
-  </section>
-</main>
+        <div class="nav-left">
+          <a href="index.html" class="logo">
+            <img src="images/logo.svg" alt="Smart Building Systems Explorer logo">
+          </a>
+        </div>
+        
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+          ☰
+        </button>
 
-<footer>
-  <p>&copy; 2026 Jason Auger</p>
-</footer>
-</body>
+        <ul id="navLinks">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="components.html">Smart Components</a></li>
+          <li><a href="systems.html">Smart Buildings</a></li>
+          <li><a href="contact.html">Request Assessment</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+    
+      <!-- HERO -->
+      <section class="hero">
+        <h2>Discover How Modern Buildings Operate Smarter</h2>
+        <p>
+          Explore example commercial buildings and the automation systems behind them—
+          HVAC platforms, analytics, and integrated networks inspired by Niagara-style
+          open frameworks.
+        </p>
+      
+        <div class="cta-buttons">
+          <a href="systems.html" class="btn-primary">Explore Systems</a>
+          <a href="contact.html" class="btn-secondary">Request an Assessment</a>
+        </div>
+      </section>
+    
+      <div class="container">
+      <!-- WHAT IS A SMART BUILDING -->
+      
+      <section class="info-card">    
+        <div class="section-flex"> 
+          <figure>
+            <img src="images/what-is-a-smart-building-thumb-1172x660.avif" alt="What is a smart building?" loading="lazy">
+            <figcaption>Smart buildings connect equipment, sensors, and analytics platforms to improve
+            energy efficiency, occupant comfort, and portfolio-wide visibility.</figcaption>
+          </figure>
+          <div>
+            <h2>What Is a Smart Building?</h2>
+            <p>A smart building, or intelligent building, is a modern structure that uses advanced technologies to connect, analyze, and optimize its performance. Smart buildings give owners actionable insights that can improve building efficiency. They also enhance the comfort of the building’s occupants through features like variable climate control settings, automated daylight strategies, or biometric security.</p>  
+          </div>
+        </div>  
+      </section>
+    
+      <section class="info-card">
+        <div class="section-flex">
+          <div>
+            <h2>Enhancing liveability with smart building solutions</h2>
+            <p>Smart buildings allow a great degree of control over the environmental conditions of a building—for building managers, 
+             this makes it possible to enhance livability for occupants. Smart building technology helps managers monitor data from the building in real time and make changes using integrated software.
+             For example, heating, ventilation, and air conditioning (HVAC) settings can be changed to match temperature trends in the building and optimize thermal comfort for the occupants.
+            
+             Lighting systems can also be adjusted based on usage and seasonality. Smart building tech also makes it possible to review historical data to see where improvements can be made.
+            </p>
+          </div>
+          <figure>
+            <img src="images/enhancing-liveability-smart-building-solutions-thumb-1172x660.jpg" alt="enhanced building solutions" loading="lazy">
+            <figcaption>Smart building technologies can analyze trends like lighting conditions to identify areas for optimization. Image courtesy of ARBA Studios.</figcaption>
+          </figure>    
+        </div>
+      </section>
+    
+      <section class="info-card">
+
+        <div class="section-flex">
+          <figure>
+            <img src="images/what-types-of-structures-can-be-smart-buildings-thumb-1172x660.avif" alt="enhanced building solutions" loading="lazy">
+            <figcaption>Smart building technology is increasingly common in homes, commercial buildings, hospitals, schools, factories, and more.</figcaption>
+          </figure>
+          <div>
+            <h2>What types of structures can be smart buildings?</h2>  
+            <p>
+              Smart building technology can be implemented in many types of structures, including office buildings, commercial buildings, 
+              residential buildings, hospitals, hotels, schools, airports, industrial facilities, data centers, warehouses, and more. By integrating advanced technologies such as IoT devices, sensors, data analytics, and automation, these buildings can optimize energy usage, enhance occupant experience, improve security, and help streamline operations. Smart space buildings offer personalized services, real-time monitoring, 
+              and data-driven decision making to create efficient, sustainable, and comfortable spaces.
+            </p>
+          </div> 
+        </div>  
+      </section>
+    
+      <section class="info-card">
+        <div class="section-flex">
+          <div>
+            <h2>Smart building automation to power progress toward sustainability goals</h2>
+            <p>Today, most businesses are trying to do their part to help the environment, and smart building
+               solutions offer powerful tools. By using building systems such as lighting and heating in the most efficient manner possible, supported
+               by accurate real-time data, companies can substantially reduce their carbon footprint. The resulting cost savings over time can be 
+               substantial, helping ensure that smart building automation is a win financially as well as environmentally.
+            </p>
+          </div>  
+          <figure>
+            <img src="images/smart-building-automation-sustainability-goals-thumb-1172x660.avif" alt="smart building automation" loading="lazy">
+            <figcaption>Automated systems that adjust to real-time lighting and temperature conditions can help increase smart buildings’ energy efficiency.</figcaption>
+          </figure>      
+         </div>  
+      </section>
+    
+      <section class="sensor-header">
+        <h2>Sensors: The key to smart building solutions</h2>
+        <p>Some of the most important elements of smart building setups are the many sensors that measure and record useful data. These include:</p>
+
+        <div class="info-cards">
+          <div class="sensor-card">
+            <h3>Temperature sensors</h3>
+            <p>These smart building sensors allow constant monitoring of room temperatures, which can be vital for different settings, from residential buildings to manufacturing environments.</p>
+          </div>
+        
+          <div class="sensor-card">
+            <h3>Humidity sensors</h3>
+            <p>Humidity sensors in smart buildings make it possible to measure relative air humidity, ensuring it’s kept at optimal levels for the situation, which can help avoid equipment rusting or limit the spread of bacteria.</p>
+          </div>
+        
+          <div class="sensor-card">
+            <h3>Occupancy sensors</h3>
+            <p>Occupancy sensors detect whether a person is present in a specific space. This can then be used to automatically switch on and off lights and HVAC systems.</p>
+          </div>
+        
+          <div class="sensor-card">
+            <h3>Air quality sensors</h3>
+            <p>These can measure many different environmental factors in intelligent buildings, as well as detect levels of pollution or noise.</p>
+          </div>
+        
+          <div class="sensor-card">
+            <h3>Light sensors</h3>
+            <p>Light sensors provide data to daylighting systems that can optimize a building’s lighting in response to natural light conditions.</p>
+          </div>
+        </div>
+      
+      </section>
+    
+      <!-- FEATURED BUILDINGS -->
+      <section class="featured">
+        <h2>Featured Smart buildings</h2>
+      
+        <div id="building-cards" class="card-grid">
+          
+          <figure>
+            <img src="images/smartbuildingjohnsoncontrols.avif" alt="Johnson Controls International" loading="lazy">
+            <figcaption>JOHNSON CONTROLS INTERNATIONAL</figcaption>
+            <h3>Energy modeling accelerates high-performance building design</h3>
+            <p>See how an HVAC and energy storage systems expert goes from FormIt to Revit to Insight for energy modeling of high-performance buildings.</p>
+            <p>Image courtesy of Johnson Controls</p>
+          </figure>  
+        
+          <figure>
+            <img src="images/smartbuildingviessmann.avif" alt="Viessmann testing facility" loading="lazy">
+            <figcaption>THE VIESSMANN GROUP</figcaption>
+            <h3>Using digital factory planning to boost heat pump production</h3>
+            <p>Explore how one of the world’s leading heating and air-conditioning specialists uses AutoCAD and Revit for smart factory planning.</p>
+            <p>Image courtesy of Viessmann</p>
+          </figure>
+
+          <figure>
+            <img src="images/wzmh-architects-thumb-788x444.avif" alt="WZMH Architects" loading="lazy">
+            <figcaption>WZMH ARCHITECTS</figcaption>
+            <h3>Tackling smart-building tech with innovative prefab R&D</h3>
+            <p>Learn how a top Toronto architecture firm develops smart modular-panel systems with Revit and Forge.</p>
+            <p>Image courtesy of WZMH</p>
+          </figure>   
+        
+        </div>
+      </section> 
+      </div> 
+    </main>
+
+    <footer>
+      <p>
+        WDD231 Student Project — Smart Building Systems Explorer
+      </p>
+    </footer>
+    </div>
+  </body>
 </html>

@@ -1,6 +1,9 @@
-const menuBtn = document.querySelector("#menuBtn");
-const navLinks = document.querySelector("#navLinks");
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.getElementById("navLinks");
 
-menuBtn.addEventListener("click", () => {
-  navLinks.classList.toggle("open");
-});
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+}
+

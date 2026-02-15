@@ -1,18 +1,259 @@
-[
-  {
-    "site": "Riverton Hospital",
-    "system": "Niagara",
-    "city": "Riverton",
-    "sqft": 250000,
-    "energyIndex": 72,
-    "status": "Operational"
-  },
-  {
-    "site": "Summit Office Tower",
-    "system": "BACnet",
-    "city": "Salt Lake City",
-    "sqft": 180000,
-    "energyIndex": 64,
-    "status": "Upgrade Planned"
-  }
-]
+{
+  "buildings": [
+    {
+      "id": "bldg-001",
+      "name": "Riverton Corporate Campus",
+      "type": "Office",
+      "sizeSqFt": 420000,
+      "location": "Riverton, UT",
+      "platform": "Niagara-based Supervisory System",
+      "protocols": ["BACnet", "Modbus", "MQTT"],
+      "controllers": ["IP field controllers", "VAV controllers", "Chiller plant controller"],
+      "analytics": ["Energy dashboards", "Fault detection", "Demand response"],
+      "networking": ["Segmented VLANs", "Firewall gateway", "TLS encryption"],
+      "systems": ["HVAC", "Lighting", "Metering"],
+      "energyProfile": "High efficiency with portfolio benchmarking",
+      "image": "images/riverton-corporate-campus.webp"
+    },
+
+    {
+      "id": "bldg-002",
+      "name": "Wasatch Medical Center",
+      "type": "Healthcare",
+      "sizeSqFt": 610000,
+      "location": "Salt Lake City, UT",
+      "platform": "Niagara-based Enterprise Supervisor",
+      "protocols": ["BACnet", "LonWorks", "OPC UA"],
+      "controllers": ["AHU controllers", "Isolation room pressure controllers"],
+      "analytics": ["Air quality monitoring", "Predictive maintenance"],
+      "networking": ["DMZ architecture", "Certificate authentication"],
+      "systems": ["HVAC", "Air quality", "Alarming"],
+      "energyProfile": "Mission-critical reliability focus",
+      "image": "images/wasatch-medical-center.webp"
+    },
+
+    {
+      "id": "bldg-003",
+      "name": "Mountain Tech University",
+      "type": "Education",
+      "sizeSqFt": 900000,
+      "location": "Provo, UT",
+      "platform": "Distributed Niagara Supervisors",
+      "protocols": ["BACnet", "Modbus"],
+      "controllers": ["Campus plant controllers", "Laboratory exhaust controllers"],
+      "analytics": ["Carbon tracking", "Energy benchmarking"],
+      "networking": ["Fiber backbone", "Secure VPN"],
+      "systems": ["HVAC", "Laboratory systems", "Energy metering"],
+      "energyProfile": "Carbon-reduction initiatives underway",
+      "image": "images/mountain-tech-university.webp"
+    },
+
+    {
+      "id": "bldg-004",
+      "name": "Red Rock Data Facility",
+      "type": "Data Center",
+      "sizeSqFt": 300000,
+      "location": "St. George, UT",
+      "platform": "High-Availability Niagara Cluster",
+      "protocols": ["BACnet", "SNMP", "REST"],
+      "controllers": ["CRAC controllers", "UPS monitoring gateways"],
+      "analytics": ["Thermal modeling", "Capacity planning"],
+      "networking": ["Dual firewalls", "Redundant networks"],
+      "systems": ["Cooling", "Power monitoring", "Alarms"],
+      "energyProfile": "Ultra-high reliability and redundancy",
+      "image": "images/red-rock-data-center.webp"
+    },
+
+    {
+      "id": "bldg-005",
+      "name": "Canyon Ridge Retail Plaza",
+      "type": "Retail",
+      "sizeSqFt": 250000,
+      "location": "Draper, UT",
+      "platform": "Niagara Integration Gateway",
+      "protocols": ["BACnet", "Modbus"],
+      "controllers": ["RTU controllers", "Lighting panels"],
+      "analytics": ["Tenant energy allocation", "Runtime optimization"],
+      "networking": ["Cloud dashboards", "Secure remote access"],
+      "systems": ["HVAC", "Lighting"],
+      "energyProfile": "Tenant-level energy tracking",
+      "image": "images/canyon-ridge-retail-plaza.webp"
+    },
+
+    {
+      "id": "bldg-006",
+      "name": "Summit Convention Center",
+      "type": "Hospitality",
+      "sizeSqFt": 520000,
+      "location": "Park City, UT",
+      "platform": "Niagara Supervisory Server",
+      "protocols": ["BACnet", "MQTT"],
+      "controllers": ["Ballroom AHU controllers", "Hydronic plant controller"],
+      "analytics": ["Occupancy scheduling", "Peak demand reduction"],
+      "networking": ["Enterprise firewall", "Secure Wi-Fi segments"],
+      "systems": ["HVAC", "Event scheduling", "Metering"],
+      "energyProfile": "Demand-response participation",
+      "image": "images/summit-convention-center.webp"
+    },
+
+    {
+      "id": "bldg-007",
+      "name": "FrontRunner Logistics Hub",
+      "type": "Industrial",
+      "sizeSqFt": 700000,
+      "location": "Ogden, UT",
+      "platform": "Niagara Edge Supervisors",
+      "protocols": ["BACnet", "Modbus", "OPC UA"],
+      "controllers": ["Warehouse RTU controllers", "Dock ventilation panels"],
+      "analytics": ["Equipment runtime analysis", "Fault detection"],
+      "networking": ["Industrial firewall", "Remote VPN"],
+      "systems": ["HVAC", "Ventilation"],
+      "energyProfile": "Operational efficiency optimization",
+      "image": "images/frontrunner-logistics-hub.webp"
+    },
+
+    {
+      "id": "bldg-008",
+      "name": "High Desert Municipal Complex",
+      "type": "Government",
+      "sizeSqFt": 380000,
+      "location": "Cedar City, UT",
+      "platform": "Niagara Municipal Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["City network segmentation", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/high-desert-municipal-complex.webp"
+    },
+
+    {
+      "id": "bldg-009",
+      "name": "Atlanta Georgia Temple",
+      "type": "Religious",
+      "sizeSqFt": 34500,
+      "location": "Atlanta, Georgia",
+      "platform": "Local VM Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["City network segmentation", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/atlanta-georgia-temple.webp"
+    },
+
+    {
+      "id": "bldg-010",
+      "name": "Auckland New Zealand Temple",
+      "type": "Religious",
+      "sizeSqFt": 45456,
+      "location": "Auckland, New Zealand",
+      "platform": "Cloud Server Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["City network segmentation", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "High efficiency with portfolio benchmarking",
+      "image": "images/auckland-new-zealand-temple.webp"
+    },
+
+    {
+      "id": "bldg-011",
+      "name": "Hong Kong Temple",
+      "type": "Religious",
+      "sizeSqFt": 51921,
+      "location": "Hong Kong, SAR",
+      "platform": "Local VM Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["City network segmentation", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/hong-kong-china-temple.webp"
+    },
+
+    {
+      "id": "bldg-012",
+      "name": "Madrid Spain Temple",
+      "type": "Religious",
+      "sizeSqFt": 45800,
+      "location": "Madrid Spain",
+      "platform": "Cloud Server Supervisor",
+      "protocols": ["BACnet", "LonWorks", "Modbus"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["City network segmentation", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "High efficiency with portfolio benchmarking",
+      "image": "images/madrid-spain-temple.webp"
+    },
+
+    {
+      "id": "bldg-013",
+      "name": "Montevideo Uruguay Temple",
+      "type": "Religious",
+      "sizeSqFt": 10700,
+      "location": "Montevideo, Uruguay",
+      "platform": "Cloud Server Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["Field Network 8", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/montevideo-uruguay-temple.webp"
+    },
+
+    {
+      "id": "bldg-014",
+      "name": "Preston England Temple",
+      "type": "Religious",
+      "sizeSqFt": 69630,
+      "location": "Preston, England",
+      "platform": "Cloud Server Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["Field Network 8", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Security systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/preston-england-temple.webp"
+    },
+
+    {
+      "id": "bldg-015",
+      "name": "Rome Italy Temple",
+      "type": "Religious",
+      "sizeSqFt": 41010,
+      "location": "Rome, Italy",
+      "platform": "Local VM Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["Area network segmentation", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/rome-italy-temple.webp"
+    },
+
+    {
+      "id": "bldg-016",
+      "name": "The Hague Temple",
+      "type": "Religious",
+      "sizeSqFt": 14477,
+      "location": "The Hague, Netherlands",
+      "platform": "Local JACE Supervisor",
+      "protocols": ["BACnet", "LonWorks"],
+      "controllers": ["Boiler plant controllers", "Lighting controllers"],
+      "analytics": ["Energy reporting", "Compliance dashboards"],
+      "networking": ["Field Network 8", "Secure access gateway"],
+      "systems": ["HVAC", "Lighting", "Water systems"],
+      "energyProfile": "Public energy transparency reporting",
+      "image": "images/the-hague-netherlands-temple.webp"
+    }
+  ]
+}
