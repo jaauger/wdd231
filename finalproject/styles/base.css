@@ -147,7 +147,7 @@ header {
 .site-footer {
 
   background: var(--slate-900);
-  color: white;
+  
   margin-top: 3rem;
   padding-top: 2rem;
 }
@@ -190,23 +190,96 @@ header {
   color: white;
 }
 
+/* =========================================
+   VIDEO BUTTON WRAPPER (Responsive)
+========================================= */
+.footer-video {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
 .video-wrapper {
 
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 16 / 9;
+  background: var(--primary);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-top: .5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 
-.video-wrapper iframe {
+/* Make link fill entire button */
 
-  position: absolute;
-  top: 0;
-  left: 0;
+.video-wrapper a {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
-  border: none;
-  border-radius: var(--radius-sm);
+  color: white;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  padding: 1rem;
+
 }
+
+/* Hover effect */
+
+.video-wrapper:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow-md);
+
+  background: #1558c0;
+
+}
+
+.video-wrapper a:hover {
+
+  text-decoration: none;
+
+}
+
+
+/* Larger screens */
+
+@media (min-width: 768px) {
+
+  .video-wrapper {
+
+    max-width: 360px;
+
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .video-wrapper {
+
+    max-width: 420px;
+
+  }
+
+}
+
 
 .footer-bottom {
 
