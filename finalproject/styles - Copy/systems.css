@@ -4,14 +4,14 @@
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 
-  margin: 2rem 3rem 1.5rem 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+
   padding: 1.5rem;
 
   display: flex;
   flex-direction: column;
   gap: .75rem;
-
-  transition: transform .15s ease, box-shadow .15s ease;
 }
 
 .page-header:hover {
@@ -41,7 +41,7 @@
   flex-wrap: wrap;
   gap: 1.5rem;
 
-  margin: 1.5rem 3rem 1.5rem 3rem;
+  margin-bottom: 1.5rem;
 
   align-items: center;
 }
@@ -81,8 +81,7 @@
 }
 .card-grid {
   display: grid;
-  padding-left: 3rem;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 /* ===============================
@@ -93,14 +92,14 @@
   background: var(--surface);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+
   padding: 1.5rem;
-  margin: 2rem 3rem 0 3rem;
+
+  margin-top: 2rem;
 
   display: flex;
   flex-direction: column;
   gap: .5rem;
-
-  transition: transform .15s ease, box-shadow .15s ease;
 }
 
 .capabilities-section:hover {
@@ -162,6 +161,13 @@
   gap: .6rem;
   transition: transform .15s ease, box-shadow .15s ease;
 }
+.system-card img {
+
+  width: 100%;
+  height: auto;   /* CRITICAL: preserves intrinsic ratio */
+  display: block;
+  border-radius: var(--radius-sm);
+}
 
 .system-card:hover {
   transform: translateY(-3px);
@@ -189,7 +195,7 @@
   font-weight: 700;
   letter-spacing: .3px;
   background-color: #e8f0fe;
-  color: #1a73e8;
+  color: #0b4796; /* original color 1a73e8*/
   border: 1px solid rgba(26, 115, 232, 0.35);
 }
 
@@ -197,36 +203,36 @@
 
 .badge[data-protocol="bacnet"] {
   background: #eef7f2;
-  color: #2e7d32;
+  color: #225e25; /* original color 2e7d32 */
   border-color: rgba(46, 125, 50, 0.4); 
 }
 
 .badge[data-protocol="modbus"] {
-  background: #fff4e5;
-  color: #b45309;
+  background: #fff4e5; 
+  color: #6e3407; /*original color b45309*/
   border-color: rgba(180, 83, 9, 0.4);
 }
 
 .badge[data-protocol="mqtt"] {
   background: #f3e8ff;
-  color: #7c3aed;
+  color: #53279e; /* original color 7c3aed*/
   border-color: rgba(124, 58, 237, 0.4);
 }
 
 .badge[data-protocol="opc-ua"] {
   background: #e0f2fe;
-  color: #0369a1;
+  color: #02476d; /*original Color 0369a1*/
   border-color: rgba(3, 105, 161, 0.4);
 }
 
 .badge[data-protocol="snmp"] {
   background: #fdecec;
-  color: #b91c1c;
+  color: #751313; /*original color b91c1c*/
   border-color: rgba(185, 28, 28, 0.4);
 }
 
 .badge[data-protocol="lonworks"] {
   background: #fef3c7;
-  color: #92400e;
+  color: #662d09; /*original color 92400e*/
   border-color: rgba(146, 64, 14, 0.4);
 }
