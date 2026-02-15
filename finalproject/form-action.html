@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="styles/result.css"/>
 
   <script src="scripts/nav.js" defer></script>
+  <script src="scripts/result.js" defer></script>
+
 
 </head>
 
@@ -46,17 +48,41 @@
       </nav>
     </header>
 
-    <main>    
+    <main> 
       <section class="confirmation">
+            
         <h2>Thank You for Your Request!</h2>
-      
+            
         <p>
           Your building assessment request has been submitted successfully.
-          In a real production system, a specialist would contact you within
-          two business days.
         </p>
       
+        <h3>Submitted Information</h3>
+      
+        <ul class="result-list">
+          <li>
+            <strong>Name:</strong>
+            <span id="result-name"></span>
+          </li>
+        
+          <li>
+            <strong>Email:</strong>
+            <span id="result-email"></span>
+          </li>
+        
+          <li>
+            <strong>Building Type:</strong>
+            <span id="result-buildingType"></span>
+          </li>
+        
+          <li>
+            <strong>Notes:</strong>
+            <span id="result-notes"></span>
+          </li>
+        </ul>
+      
         <h3>What Happens Next?</h3>
+      
         <ul>
           <li>Review of existing building systems</li>
           <li>Energy savings analysis</li>
@@ -64,9 +90,12 @@
           <li>Analytics recommendations</li>
         </ul>
       
-        <a href="index.html" class="btn-primary">Return to Home</a>
+        <a href="index.html" class="btn-primary">
+          Return to Home
+        </a>
+      
       </section>
-    
+
     </main>
 
     <footer>

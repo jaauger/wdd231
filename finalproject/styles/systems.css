@@ -161,6 +161,13 @@
   gap: .6rem;
   transition: transform .15s ease, box-shadow .15s ease;
 }
+.system-card img {
+
+  width: 100%;
+  height: auto;   /* CRITICAL: preserves intrinsic ratio */
+  display: block;
+  border-radius: var(--radius-sm);
+}
 
 .system-card:hover {
   transform: translateY(-3px);
