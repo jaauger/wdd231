@@ -166,13 +166,11 @@ header {
 .footer-section h4 {
 
   margin-top: 0;
-
 }
 
 .footer-section p {
 
   color: var(--slate-300);
-
 }
 
 .footer-section ul {
@@ -197,7 +195,6 @@ header {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
-
 }
 
 .video-wrapper iframe {
@@ -209,7 +206,6 @@ header {
   height: 100%;
   border: none;
   border-radius: var(--radius-sm);
-
 }
 
 .footer-bottom {
